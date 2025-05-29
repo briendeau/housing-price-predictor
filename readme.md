@@ -1,5 +1,5 @@
-📊 Project Title: Predicting Housing Prices with Machine Learning
-📝 Overview
+🏡 Predicting Housing Prices with Machine Learning
+📌 Overview
 This project involves building a machine learning model to predict housing prices based on various features. The dataset used is the Ames Housing dataset, which contains 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa.
 
 🎯 Objectives
@@ -13,7 +13,7 @@ Select the best model based on performance metrics.
 
 Deploy the model using a simple web application.
 
-📁 Repository Structure
+🗂️ Repository Structure
 bash
 Copy
 Edit
@@ -81,3 +81,31 @@ Flask
 matplotlib
 
 seaborn
+
+Install dependencies using:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🧪 Running the Project
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/housing-price-prediction.git
+cd housing-price-prediction
+Run the notebooks in the notebooks/ directory to follow the EDA, preprocessing, and modeling steps.
+
+To start the web application:
+
+bash
+Copy
+Edit
+cd app
+python app.py
+Access the app at http://localhost:5000.
+
+📄 License
+This project is licensed under the MIT License.
