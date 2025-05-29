@@ -1,111 +1,46 @@
-🏡 Predicting Housing Prices with Machine Learning
-📌 Overview
-This project involves building a machine learning model to predict housing prices based on various features. The dataset used is the Ames Housing dataset, which contains 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa.
+# 🏡 Boston Housing Price Prediction
 
-🎯 Objectives
-Perform exploratory data analysis (EDA) to understand the data.
+Predicting housing prices in Boston using machine learning techniques.
 
-Preprocess the data, handling missing values and encoding categorical variables.
+![Project Banner](https://upload.wikimedia.org/wikipedia/commons/5/5f/Boston_MA_Skyline.jpg)
 
-Build and evaluate multiple regression models.
+## 📌 Table of Contents
 
-Select the best model based on performance metrics.
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-Deploy the model using a simple web application.
+## 🧠 Overview
 
-🗂️ Repository Structure
-bash
-Copy
-Edit
-housing-price-prediction/
-├── data/
-│   ├── raw/                # Original raw data files
-│   └── processed/          # Cleaned and processed data
-├── notebooks/
-│   ├── 01_eda.ipynb        # Exploratory Data Analysis
-│   ├── 02_preprocessing.ipynb  # Data preprocessing steps
-│   └── 03_modeling.ipynb   # Model training and evaluation
-├── src/
-│   ├── data_preprocessing.py   # Scripts for data cleaning
-│   ├── train_model.py      # Script to train the model
-│   └── predict.py          # Script for making predictions
-├── app/
-│   ├── app.py              # Flask app for deployment
-│   └── templates/
-│       └── index.html      # HTML template for the web app
-├── requirements.txt        # Python dependencies
-├── README.md               # Project overview and instructions
-└── LICENSE                 # License information
-📊 Exploratory Data Analysis (EDA)
-Visualized distributions of key features.
+This project aims to predict the median value of owner-occupied homes in Boston suburbs using various features such as crime rate, average number of rooms, and accessibility to highways. We employ multiple regression techniques and evaluate their performance.
 
-Identified correlations between features and the target variable.
+## 📊 Dataset
 
-Detected and handled outliers.
+The [Boston Housing Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#boston-house-prices-dataset) contains information collected by the U.S Census Service concerning housing in the area of Boston Mass. It has 506 instances with 13 features.
 
-🛠️ Data Preprocessing
-Imputed missing values using appropriate strategies.
+**Features:**
 
-Converted categorical variables using one-hot encoding.
+- CRIM: per capita crime rate by town
+- ZN: proportion of residential land zoned for lots over 25,000 sq.ft.
+- INDUS: proportion of non-retail business acres per town
+- CHAS: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+- NOX: nitric oxides concentration (parts per 10 million)
+- RM: average number of rooms per dwelling
+- AGE: proportion of owner-occupied units built prior to 1940
+- DIS: weighted distances to five Boston employment centres
+- RAD: index of accessibility to radial highways
+- TAX: full-value property-tax rate per $10,000
+- PTRATIO: pupil-teacher ratio by town
+- B: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
+- LSTAT: % lower status of the population
 
-Scaled numerical features using standardization.
+**Target:**
 
-🤖 Modeling
-Trained multiple regression models: Linear Regression, Ridge, Lasso, and XGBoost.
+- MEDV: Median value of owner-occupied homes in $1000's
 
-Performed hyperparameter tuning using GridSearchCV.
 
-Evaluated models using RMSE and R² metrics.
-
-🏆 Results
-The XGBoost model achieved the best performance with an RMSE of 0.12 and R² of 0.92 on the test set.
-
-🚀 Deployment
-Developed a Flask web application to input new data and predict housing prices.
-
-The app allows users to enter feature values and displays the predicted price.
-
-📚 Requirements
-Python 3.8+
-
-pandas
-
-numpy
-
-scikit-learn
-
-xgboost
-
-Flask
-
-matplotlib
-
-seaborn
-
-Install dependencies using:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🧪 Running the Project
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/housing-price-prediction.git
-cd housing-price-prediction
-Run the notebooks in the notebooks/ directory to follow the EDA, preprocessing, and modeling steps.
-
-To start the web application:
-
-bash
-Copy
-Edit
-cd app
-python app.py
-Access the app at http://localhost:5000.
-
-📄 License
-This project is licensed under the MIT License.
