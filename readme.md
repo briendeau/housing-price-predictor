@@ -61,5 +61,17 @@ The final model achieved the following performance:
    cd ames-housing-price-prediction
    ```
 
+📁 Data
+The dataset used is the Ames Housing dataset, which includes 79 explanatory variables describing (almost) every aspect of residential homes
 
+📚 References
+Kaggle: House Prices - Advanced Regression Techniques
+
+Ames Housing dataset documentation
+
+👤 Author
+Your Name - your.email@example.com
+
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
