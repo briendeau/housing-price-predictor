@@ -6,7 +6,7 @@ Predicting housing prices in Boston using machine learning techniques.
 
 ## 📌 Table of Contents
 
-- [Overview](#overviewkk)
+- [Overview](#overview)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
