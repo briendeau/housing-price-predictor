@@ -43,4 +43,23 @@ The [Boston Housing Dataset](https://scikit-learn.org/stable/datasets/toy_datase
 
 - MEDV: Median value of owner-occupied homes in $1000's
 
+  
+
+## 📈 Results
+
+The final model achieved the following performance:
+
+- **Root Mean Squared Error (RMSE):** 0.12
+- **R² Score:** 0.92
+
+## 🛠️ Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/ames-housing-price-prediction.git
+   cd ames-housing-price-prediction
+   ```
+
+
 
